@@ -14,6 +14,10 @@ def draw_square(length, depth):
         turtle.right(45)
         draw_square(length * 0.707, depth - 1)
 def main():
+    """
+    Main function for drawing square.
+    :return:
+    """
     depth = int(input('Глубина рекурсии:'))
     length  = int(input('Длина стороны:'))
     turtle.speed(0)
@@ -25,8 +29,4 @@ def main():
     draw_square(length, depth)
 
 if __name__ == '__main__':
-    """
-    Main function for drawing square.
-    :return:
-    """
     main()
