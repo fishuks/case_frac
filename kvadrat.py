@@ -7,6 +7,10 @@ def draw_square(size, depth):
     :param size: step length
     :return:
     """
+    if depth == 0:
+        for _ in range(4):
+            turtle.forward(size)
+            turtle.right(90)
     if depth > 0:
         for _ in range(4):
             turtle.forward(size)
